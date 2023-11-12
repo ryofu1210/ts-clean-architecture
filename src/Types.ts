@@ -9,5 +9,6 @@ export const TYPES = {
   IUserCreatePresenter: Symbol.for("IUserCreatePresenter"),
   IUserCreateUseCase: Symbol.for("IUserCreateUseCase"),
   UserController: Symbol.for("UserController"),
+  ICreateUserView: Symbol.for("ICreateUserView"),
 };
 

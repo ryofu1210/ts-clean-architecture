@@ -8,6 +8,8 @@ import { InMemoryUserRepository } from "@/inMemoryInfrastructure/users/InMemoryU
 import { UserCreateInteractor } from "@domain/application/user/UserCreateInteractor";
 import { UserCreatePresenter } from "@/consoleApp/user/create/UserCreatePresenter";
 import { UserController } from "./user/UserController";
+import { ICreateUserView } from "@/consoleApp/IConsoleView";
+import { ConsoleView } from "@/consoleApp/ConsoleView";
 
 export class Setup {
   private static container: Container = new Container();
@@ -26,6 +28,9 @@ export class Setup {
     this.container
       .bind<IUserCreatePresenter>(TYPES.IUserCreatePresenter)
       .to(UserCreatePresenter);
+    this.container
+      .bind<ICreateUserView>(TYPES.ICreateUserView)
+      .to(ConsoleView);
     this.container
       .bind<UserController>(TYPES.UserController)
       .to(UserController);

@@ -1,7 +1,6 @@
 import { Setup } from "./Setup";
 import { UserController } from "./user/UserController";
 import { TYPES } from "@/Types";
-import * as fs from "fs";
 import * as readline from "readline";
 
 export class Program {

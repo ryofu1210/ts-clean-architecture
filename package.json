@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build:live",
     "build": "tsc -p .",
-    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" -r tsconfig-paths/register src/main.ts",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node -r tsconfig-paths/register src/main.ts",
     "dev": "npx ts-node -r tsconfig-paths/register src/main.ts"
   },
   "keywords": [],
